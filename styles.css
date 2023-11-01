@@ -28,10 +28,11 @@ p {
 	margin:0 auto;	
 	background-color:#FFF;
 }
-#header #logo {
+.logo {
 	width:280px;
 }
-#header #pub h1 {
+/*modification:01 supresion balise nativ html du fichier css  */
+.pub{
 	width:690px;
 	background-color:#F90;
 	text-align:center;
@@ -39,19 +40,17 @@ p {
 	vertical-align: middle;
 	line-height: 96px;
 }
-
-
 /*********************menu****************************************/
-ul#menu_horizontal {
+.menu {
      margin: 1em 0px 0px 0px;
      padding: 0px;
 	text-align: center;
 }
-ul#menu_horizontal li {
+.horizontal {
 	display: inline-block;
 	list-style:none;
 }
-ul#menu_horizontal li a {
+.list .item {
 	color:red;
 	display:block;
 	padding:10px;	
@@ -62,27 +61,27 @@ ul#menu_horizontal li a {
 	margin:0 10px 0 0;	
 	background-color:#FF0;
 	border: thin solid orange;
-	
 }
-ul#menu_horizontal a:hover {
+.list .item:hover {
      background-color: #FF9900;
      color: black;
 }	
+
 /*******contenu et colonnes********/
 
 
-#contenu {
+.main {
 	display: flex;
 	justify-content: space-between;
 }
-#contenu_centre {
+.col-centre {
 	width:50%;
 	margin:10px 0 0 0;
 	padding:10px;	
 	background-color:#FF0
 }
 
-#contenu_gauche, #contenu_droite {
+.col-gauche, .col-droite {
 	width:22%;	
 	margin:10px;
 	min-height:500px;
@@ -90,34 +89,34 @@ ul#menu_horizontal a:hover {
 }
 
 /*******colonne gauche********/
-#contenu_gauche .bloc {
+.col-gauche .bloc {
 	padding: 0 5px 10px 10px;
 	margin-top:10px;
 	font-size: 0.8em;
 	}
-#contenu_gauche .bloc h3 {
+.gauche-titre-nivau3 {
 	background: #fff;
 	padding: 0.2em;
 	text-align: center;
 	margin-bottom: 0.5em;
 	}
-#contenu_gauche .bloc span {
+.col-gauche .date {
 		color: #3B4EA1;
 	}
 
 /*******colonne centre********/
 
-#contenu_centre  .align_droite {
+.col-centre  .align_droite {
 	float:right;
 	margin:0 0 10px 10px
 }
-#vignettes {
+.conteneur-vignettes {
 	margin:1em 0 0 0;
 	padding: 0 1% 0 1%;
 	text-align: center;
 }
 
-#vignettes .vignette {
+.vignette {
 	width:30%;
 	height:150px;
 	margin:0 1% 0 1%;
@@ -126,7 +125,7 @@ ul#menu_horizontal a:hover {
 }
 
 /********************colonne droite*************************/
-#actualites {
+.actualites {
 	height:250px;
 	border-radius:10px;
 	overflow:auto;
@@ -135,29 +134,29 @@ ul#menu_horizontal a:hover {
 	padding:10px;
 }
 
-#actualites h2 {
+.actu-titre-nivau2  {
 	text-align: center;
 }
-#actualites .bloc {
+.actualites .bloc {
 	border-bottom:1px solid #ac9068;
 	padding: 0 5px 10px 10px;
 	margin-top:10px;
 	font-size: 0.8em;
 	}
-#actualites .bloc h3 {
+.droite-titre-nivau3 {
 	font-weight: bold;
 	font-size: 12px;
 	font-weight: bold;
 	margin:0 0 3px 0;
 }
-#actualites .bloc span {
+.col-droite .date {
 	color:#d48940;font-weight: bold;
 }
 
 
 /***********footer**********************/
 
-#footer {	
+.footer {	
 	text-align:right;
 	padding:10px;
 	font-size:10px;

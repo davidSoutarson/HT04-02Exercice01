@@ -34,12 +34,12 @@ Voici une page HTML CSS dont les ciblages ont été réalisés il y a quelques a
 
     |class ou id|original|modification|
     |:------:|:------|:------|
-    |id|wraper|...|
+    |id|wraper|id non modifier.</br> utiliser pour encadre tout les elements de la page a linterieur du body|
     |id|header|...|
     |id|logo|...|
     |class|clolonne|...|
     |id|pub|...|
-    |class|clear|...|
+    |class|clear|class non modifier.</br>uitiliser pour metre fin a un flottements|
     |id|menu_horizontal|...|
     |id|contenu|...|
     |id|contenu_gauche|...|
